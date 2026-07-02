@@ -3,13 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Sadhana Thakur | Frontend Developer</title>
+  <meta name="description" content="Portfolio of Sadhana Thakur, a frontend developer building elegant and responsive web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">My Portfolio</h1>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="site-header" id="home">
+    <div class="container nav-bar">
+      <a class="logo" href="#home">Sadhana<span>.</span></a>
       <nav class="nav" id="nav">
         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <ul class="nav-list" id="nav-list">
@@ -19,75 +26,116 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-          <div>
-            <h2>Hi, I'm Sadhana Thakur</h2>
-            <p class="hero-subtitle">Frontend developer — <span class="moving-text"><span class="word-list"><span class="word">building modern, responsive web experiences.</span><span class="word">crafting polished UI interactions.</span><span class="word">designing clean, accessible interfaces.</span></span></span></p>
-            <a class="btn" href="#projects">See my work</a>
-          </div>
-      <div class="container">
-        <div class="hero-inner">
-          <div class="profile-box">
-            <div class="profile-placeholder">ST</div>
-          </div>
-          <div class="hero-copy">
-            <h2>Hi, I'm Sadhana Thakur</h2>
-            <p class="hero-subtitle">Frontend developer focused on <span class="moving-text"><span class="word-list"><span class="word">responsive web apps.</span><span class="word">accessible UI design.</span><span class="word">clean frontend experiences.</span></span></span></p>
-            <a class="btn" href="#projects">See my work</a>
+    </div>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Frontend Developer • UI Enthusiast</p>
+        <h1>Hi, I’m <span>Sadhana Thakur</span>.</h1>
+        <p class="hero-subtitle">I build polished, responsive web experiences that feel effortless to use and beautiful to look at.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See My Work</a>
+          <a class="btn btn-secondary" href="#contact">Let’s Talk</a>
+        </div>
+        <ul class="hero-highlights">
+          <li>Accessible interfaces</li>
+          <li>Modern CSS & JavaScript</li>
+          <li>Fast, responsive layouts</li>
+        </ul>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-box">
+          <div class="profile-placeholder">ST</div>
+        </div>
+        <div class="hero-card-content">
+          <p class="card-label">Currently crafting</p>
+          <h3>Thoughtful web experiences</h3>
+          <p>From concept to code, I love turning ideas into interfaces that feel premium and intuitive.</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="content-section container">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Design-led development with a human-centered approach.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I’m a frontend developer based in Mandi, Himachal Pradesh, focused on creating seamless digital experiences using HTML, CSS, and JavaScript.</p>
+          <p>I enjoy blending visual storytelling with clean code to make websites feel modern, fast, and easy to navigate.</p>
+        </div>
+        <div class="skills-card">
+          <h3>Core Skills</h3>
+          <div class="tag-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>Accessibility</span>
+            <span>UI Polish</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about container">
-      <h3>About Me</h3>
-      <p>I build accessible and responsive web interfaces using HTML, CSS and JavaScript.</p>
-      <ul>
-        <li>Location: Mandi (HP)</li>
-        <li>Tech: HTML, CSS, JavaScript</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="projects container">
-      <h3>Projects</h3>
+    <section id="projects" class="content-section container">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Selected work that brings ideas to life.</h2>
+      </div>
       <div class="grid">
         <article class="card">
-          <h4>Project One</h4>
-          <p>Project on responsive design.</p>
-          <a class="card-link" href="#">View</a>
+          <h3>Elegant Landing Page</h3>
+          <p>A visually rich landing experience built with a strong emphasis on storytelling and conversion.</p>
+          <a class="card-link" href="#contact">Request a similar build</a>
         </article>
         <article class="card">
-          <h4>Project Two</h4>
-          <p>Project on portfolio design.</p>
-          <a class="card-link" href="#">View</a>
+          <h3>Interactive Portfolio</h3>
+          <p>A responsive personal site with motion, refined structure, and a polished visual identity.</p>
+          <a class="card-link" href="#contact">Explore the concept</a>
         </article>
         <article class="card">
-          <h4>Project Three</h4>
-          <p>Project on web development.</p>
-          <a class="card-link" href="#">View</a>
+          <h3>Modern Web Interface</h3>
+          <p>A clean, component-driven UI focused on clarity, usability, and strong visual hierarchy.</p>
+          <a class="card-link" href="#contact">Discuss a project</a>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="contact container">
-      <h3>Contact</h3>
-      <form id="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+    <section id="contact" class="content-section container">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s create something memorable.</h2>
+      </div>
+      <div class="contact-wrap">
+        <form id="contact-form" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit" class="btn">Send</button>
-      </form>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="contact-card">
+          <h3>Open for opportunities</h3>
+          <p>I’m available for freelance work, creative collaborations, and frontend projects that value quality and detail.</p>
+          <a href="mailto:sadhana@example.com" class="contact-link">sadhana@example.com</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 Your Name</p>
+      <p>© <span id="year"></span> Sadhana Thakur. Crafted with care.</p>
     </div>
   </footer>
 
