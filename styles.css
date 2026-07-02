@@ -145,6 +145,9 @@ body::before {
 
 .hero h1 span {
   color: #b7bcff;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .hero-subtitle {
