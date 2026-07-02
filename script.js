@@ -1,3 +1,6 @@
+console.log('script.js loaded');
+document.addEventListener('DOMContentLoaded', () => document.body.classList.add('debug-loaded'));
+
 // mobile nav toggle
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');

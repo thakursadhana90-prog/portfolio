@@ -10,6 +10,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+body.debug-loaded{outline:4px solid #22c55e}
 body{font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;margin:0;background:radial-gradient(circle at top, rgba(79,70,229,.25), transparent 24%),radial-gradient(circle at 20% 10%, rgba(255,255,255,.08), transparent 15%),linear-gradient(180deg,#081124 0%, #0f1724 100%);color:var(--text);line-height:1.6}
 body::before{content:"";position:fixed;inset:0;background:linear-gradient(135deg,rgba(79,70,229,.05),transparent 40%),linear-gradient(225deg,rgba(59,130,246,.03),transparent 30%);pointer-events:none;mix-blend-mode:screen;}
 .container{max-width:1080px;margin:0 auto;padding:2rem}
